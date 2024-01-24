@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Ts</title>
+  </head>
+  <body>
+    <div class="card">
+      <div id="console">Console</div>
+      <button id="startGame" type="button">Start</button>
+      <button id="stopGame" type="button">Stop</button>
+      <div id="joystick"></div>
+      <div class="demo-row">
+        <div class="demo-row__title">State</div>
+        <div class="demo-row__column" id="state">standing still</div>
+      </div>
+      <div class="demo-row">
+          <div class="demo-row__title">Displacemenet vector</div>
+          <div class="demo-row__column" id="vector">x: 0, y: 0</div>
+      </div>
+      <div class="demo-row">
+          <div class="demo-row__title">Displacemenet value</div>
+          <div class="demo-row__column" id="value">0</div>
+      </div>
+      <div class="demo-row">
+          <div class="demo-row__title">Angle (degrees)</div>
+          <div class="demo-row__column" id="degrees">-</div>
+      </div>
+      <div class="demo-row">
+          <div class="demo-row__title">Angle (radians)</div>
+          <div class="demo-row__column" id="radians">-</div>
+      </div>
+      <div class="demo-row">
+          <div class="demo-row__title">Direction</div>
+          <div class="demo-row__column" id="direction">-</div>
+      </div>
+    </div>
+
+    <canvas id="canvas" height="500" width="500" style="border:1px solid black; background:rgba(34,45,23,0.4)"></canvas>
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
