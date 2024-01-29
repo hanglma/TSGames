@@ -4,12 +4,12 @@
 
 ### Installation der Programme
 
-Als erstes muss *git* natürlich installiert werden. Dafür müssen wir die Download-Files von https://git-scm.com/download/win herunterladen.
+Als erstes muss *git* natürlich installiert werden. Dafür müsst du die Download-Files von https://git-scm.com/download/win herunterladen.
 Der Link führt dich zum Download für die Windows Version von *git*, hier kannst du einfach die neuste Version herunterladen.
 
 Um nun *git* zu installieren muss die .exe Datei die du gerade heruntergeladen hast ausführen. Nun wird dir ein Dialogfenster angezeigt wo du Optionen zur Installation von *git* bekommst. Die Voreinstellungen passen so wie sie sind, d.h. du kannst dich einfach durch klicken.
 
-Natürchlich brauchen wir auch einen Code-Editor. Ich werde im folgenden Visual Studio Code benutzen. In diesem Tutorial ist leider keine Zeit für ein volles Tutorial von VS-Code aber hier ist ein Video, dass nützlich sein könnte 😉 https://www.youtube.com/watch?v=r5jNl-IOSZg 
+Natürchlich brauchst wduir auch einen Code-Editor. Ich werde im folgenden Visual Studio Code nutzen. In diesem Tutorial ist leider keine Zeit für ein vollständiges Tutorial von VS-Code aber hier ist ein Video, dass nützlich sein könnte 😉 https://www.youtube.com/watch?v=r5jNl-IOSZg 
 
 ### Anmeldung bei gitHub oder gitLab
 
