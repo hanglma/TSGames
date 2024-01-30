@@ -4,56 +4,56 @@
 
 ### Installation der Programme
 
-Als erstes muss *git* natürlich installiert werden. Dafür müsst du die Download-Files von https://git-scm.com/download/win herunterladen.
-Der Link führt dich zum Download für die Windows Version von *git*, hier kannst du einfach die neuste Version herunterladen.
+Als erstes muss *git* natürlich installiert werden. Dafür müssen die Download-Files von https://git-scm.com/download/win heruntergeladen werden.
+Der Link führt zum Download für die Windows Version von *git*, hier kann die neuste Version herunterladen.
 
-Um nun *git* zu installieren muss die .exe Datei die du gerade heruntergeladen hast ausführen. Nun wird dir ein Dialogfenster angezeigt wo du Optionen zur Installation von *git* bekommst. Die Voreinstellungen passen so wie sie sind, d.h. du kannst dich einfach durch klicken.
+Um nun *git* zu installieren muss man die gerade heruntergeladene .exe Datei die ausführen. Nun wird dir ein Dialogfenster angezeigt, das Optionen zur Installation von *git* enthält. Die Voreinstellungen passen so wie sie sind, d.h. es kann einfach durch geklickt werden.
 
-Natürchlich brauchst wduir auch einen Code-Editor. Ich werde im folgenden Visual Studio Code nutzen. In diesem Tutorial ist leider keine Zeit für ein vollständiges Tutorial von VS-Code aber hier ist ein Video, dass nützlich sein könnte 😉 https://www.youtube.com/watch?v=r5jNl-IOSZg 
+Natürchlich braucht man auch einen Code-Editor. Im folgenden wird Visual Studio Code genutzt, jedoch is in diesem Tutorial leider keine Zeit für ein vollständiges Tutorial von VS-Code. Hier ist ein Video, dass trotzdem nützlich sein könnte 😉 https://www.youtube.com/watch?v=r5jNl-IOSZg 
 
 ### Anmeldung bei gitHub oder gitLab
 
-Um mit *git* Repositories zu verwalten brauchen wir natürlich auch Repositories. Hierfür müssen wir uns bei gitHub oder gitLab registrieren. Beide Websites funktionieren gut jedoch ist gitHub die größere Plattform was heißt, dass du hier mehr Projekt von anderen finden wirst.
+Um mit *git* Repositories zu verwalten braucht man natürlich auch Repositories. Hierfür muss ein gitHub oder gitLab Account erstellt werden. Beide Websites funktionieren gut jedoch ist gitHub die größere Plattform was heißt, dass es dort mehr Projekt von Anderen zufinden gibt.
 
-Folge diesem Link um dich zu registrieren: https://github.com Merke dir bitte deine Nutzerdaten, da du diese für die weitere Einrichtung von *git* brauchst.
+Für die Registrierung folge bitte diesem Link: https://github.com (Nutzerdaten merken!!!)
 
 ### Einrichtung Username & E-Mail
 
-Um nun deine Nutzerdaten, die du zuvor bei der Erstellung deines gitHub oder gitLab Profils, wird der  Befehl *git config*.  
+Um nun das *git* des Computers mit gitHub zu verbinden muss die *.gitconfig-Datei* bearbeitet werden. Dies geschiet mit dem Befehl *git config*.
 
 ```
-# mit diesem Befehl setzt du deinen Nutzernamen
-$ git config --global user.name "dein Nutzername"
+# Befehl zum setzten des Nutzernamen
+$ git config --global user.name hanspeter
 
-# mit diesem deine E-Mail
-$ git config --global user.email "deine E-Mail"
+# Befehl zum setzen der E-Mail
+$ git config --global user.email hans@peter.de
 ```
 
-Die ersten Schritte sind hast du schon geschafft git ist jetzt berteit um dein erstes Projekt zu starten. Aber wie und welche Befehle kannst du dabei gebrauchen, dass lernst du im nächsten Abschnitt.
+Die ersten Schritte sind geschafft 😁 *git* ist jetzt berteit für das erste Projekt. Aber wie und welche Befehle kannst man dabei gebrauchen kann, dass kommt im nächsten Abschnitt.
 
 ## 2. grundlegende Begriffe und Befehle + erstes Projekt
 
-Um dir die Grundlegenden Begriffe und Befehle beizubringen werde ich dich durch ein Projekt namens *first-contributions*. Hier wirst du auch lernen wie man mit Menschen aus der ganzen Welt zusammenarbeiten kannst.
+Um die Grundlegenden Begriffe und Befehle zu lernen kann man ein Projekt namens *first-contributions*. Hier wird einem beigebracht wie man mit Menschen aus der ganzen Welt zusammenarbeiten kannst.
 
-Hier findest du dieses Repository: https://github.com/firstcontributions/first-contributions/tree/main 
+Hier ein Link für dieses Projekt: https://github.com/firstcontributions/first-contributions/tree/main 
 
 ### ein Repository *"forken"*
 
-Als erstes musst du das Repository *"forken"* damit du Änderungen daran vornehmen kannst. Hierzu musst du auf den Knopf namens Fork klicken. 
+Als erstes muss man das Repository *"forken"* damit Änderungen daran vorgenommen werden können. Hierzu muss auf den Knopf namens Fork geklickt werden. 
 
 ![Picture of where to Fork](picture/forkPicture1.png)
 
-Als nächstes auf Create Fork klicken. (alle anderen Einstellungen passen so wie sie sind) Dies sollte nun eine Kopie des Repositorys in deinem Account erstellen.
+Als nächstes auf Create Fork klicken. (alle anderen Einstellungen passen so wie sie sind) Dies sollte nun eine Kopie des Repositorys im persöhnlichen Account erstellen.
 
 <img src="picture/forkPicture2.png" alt="picture of how to fork" width="400"/>
 
 ### das Projekt auf den eigenen Computer laden (*git clone*)
 
-Jetzt musst du das *"geforkte"* Repository auf deinen Computer *klonen*. Dazu öffnest du das Repository in deinem Account und klickst auf den Knopf "Code".
+Jetzt wird das vorher *"geforkte"* Repository auf den Computer *geklont*. Dazu öffnet man das Repository in seinem Account und klickt auf den Knopf "Code".
 
 ![picture of where to clone](picture/clonePicture1.png)
 
-Nun öffnet sich ein Fenster mit einre URL , diese musst du kopieren.
+Nun öffnet sich ein Fenster mit einre URL, diese muss kopiert werden.
 
 ![picture of how to clone](picture/clonePicture2.png)
 
@@ -62,7 +62,7 @@ Um das Repositroy zu klonen gibt man jetzt den Befehl *git clone* gefolgt von de
 Dieser Befehl muss in *Commandline* oder *Cmd* eingegeben werden (Cmd öffnet sich in VS-Code mit Strg + Ö)
 
 ```
-# git clone "deine URL"
+# git clone "URL für Repository"
 $ git clone https://github.com/firstcontributions/first-contributions.git
 ```
 
@@ -86,7 +86,7 @@ C:\Users\hans\Dokumente\first-contributions>
 Um einen Branch zu erstellen brauch man natürlich auch einen sinnvollen Namen. Dieser sollte das Feature beschreiben, dass man in diesem umsetzen will.
 
 ```
-# git switch -c "dein Branchname"
+# git switch -c "Branchname"
 $ git switch -c added_Hans_Peter
 ```
 
@@ -124,7 +124,7 @@ $ git add Contributors.md
 Zuletzt müssen diese Änderungen abgegeben/commited werden. Hierzu wird der Befehl *git commit* verwendet. Jeder *commit* sollte eine Commit-Message enthalten. Diese wird mit -m hinzugefügt und beschreibt was seit dem letzten commit geändert wurde.
 
 ```
-# git commit -m "deine Commit-Message"
+# git commit -m "Commit-Message"
 $ git commit -m "Add Hans to Contributors list"
 ```
 
@@ -132,10 +132,10 @@ $ git commit -m "Add Hans to Contributors list"
 
 ### Änderungen hochladen/pushen (*git push*)
 
-Alle Änderungen, die wir bis jetzt vorgenommen haben, waren local. Um nun das Projekt online zu sichern müssen wir es auf gitHub hochladen/pushen. Dafür wird der Befehl *git push* verwendet.
+Alle Änderungen, die bis jetzt vorgenommen wurden, waren local. Um nun das Projekt online zu sichern muss es auf gitHub hochgeladen/gepusht werden. Dafür wird der Befehl *git push* verwendet.
 
 ```
-# git push origin "dein Branchname"
+# git push origin "Branchname"
 $ git push origin added_Hans_Peter
 ```
 
@@ -147,11 +147,11 @@ Jetzt, da alle Änderungen vorgenommen wurden kann man das Projekt wieder in das
 
 ![where to pullRequest](picture/pullRepuest1.png)
 
-Nun öffnet sich ein Fenster indem man den Namen seiner *pull request* und einen Kommentar eingibt. Beides sollte definieren was du mit dieser *pull request* erreichent möchtest.
+Nun öffnet sich ein Fenster indem man den Namen seiner *pull request* und einen Kommentar eingibt. Beides sollte definieren was mit dieser *pull request* erreichent werden soll.
 
 ![comment for pullRequest](picture/pullRequest2.png)
 
-Der Verwalter des Projekts muss nun die *pull request* annehmen. Nachdem er deinen Fork annimmt wird der Name, den man vorhin eingetragen hat, in *Contributors.md* angezeigt.
+Der Verwalter des Projekts muss nun die *pull request* annehmen. Nachdem er den Fork annimmt wird der Text, den man vorhin eingetragen hat, in *Contributors.md* angezeigt.
 
 ## 4. nützliches Wissen
 
