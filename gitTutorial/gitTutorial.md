@@ -163,4 +163,35 @@ Der Verwalter des Projekts muss nun die *pull request* annehmen. Nachdem er dein
 
 In VS-Code kann man auch ohne *Cmd* Änderungen *adden, commiten und pushen*. Im Fenster *Source Control* kann mit dem Plus-Symbol sozusagen der Befehl *git add* ausgeführt werden. Mit dem Commit-Knopf können dann alle so hinzugefügten Änderungen *commited* werden. Nachdem alles so gespeichert wured kann mit --- das Online-Repository auf den neusten Stand gebracht werden.
 
-### nicht alles Hochladen -> gitignore
+### nicht alles Hochladen -> .gitignore
+
+Mit einer .gitignore Datei kann können bestimmte Datein bestimmt werden, die *git* nicht tracken soll und somit auch nicht bei *Commits* mitnehmen soll. Dies sind Dateien die nicht für die öffentlichkeit bestimmt sind und auch nicht auf gitHub landen sollten. Ein beispiel für solche Datein wären welche, die SSH-Keys, die für jede Person unteschielich sind, enthalten.
+
+Ein Beispiel für .gitignore wäre das hier: 
+
+```
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+```
