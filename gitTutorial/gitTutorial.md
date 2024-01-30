@@ -167,7 +167,33 @@ Um nun das Projekt auf diesen Stand zurück zusetzten, wählt man wieder die dre
 
 <img src="picture/restorePicture2.png" alt="picture of commit Messages" width="600"/>
 
-### Mergen von zwei Branchen
+### Mergen von zwei Branchen mit einem diff-Tool
+
+Um VS-Code als diff-Tool zu verwenden muss man die .gitconfig Datei bearbeiten.
+
+``` 
+# Befehl um .gitconfig aufzurufen
+$ git config --global -e
+```
+
+In diese Datei müssen folgenden Zeilen Code hinzugefügt werden: 
+
+```
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+```
+
+Man kann jetzt zwei Branches *mergen* in dem man mit *git switch* zu dem Branch navigiert in den der andere Branch hinein gemerged werden soll. Als nächstes kann mit *Strg + Shift + P* nach dem Command *"Git: Merge Branch"* nun muss man lediglich den zweiten Branch auswählen.
+
+Falls während dem Merge ein Widersprüche auftreten können dieses mit dem in VS-Code eingebautem *diff-Tool* gelöst werden. In diesem Tool kann gewählt werden welche Version des Codes genommen werden soll.
+
+
 
 ### Integration in VS-Code
 
