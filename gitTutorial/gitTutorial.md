@@ -157,6 +157,16 @@ Der Verwalter des Projekts muss nun die *pull request* annehmen. Nachdem er dein
 
 ### Wiederherstellung einer bestimmten Version des Projekts
 
+Die Wiederherstellung einer füheren Version des Projekts kann ganz einfach mit der Erweiterung *gitLense für VS-Code* erreichen.
+
+Nach der Installation sollte ein neues Icon in der rechten Leiste erscheinen, welches nach ein neues Fenster in der rechten Spalte öffnet. Hier kann man den Reiter Commit-Graph wählen, welches wieder ein Fenster aufmacht in dem alle *Commits* gezeigt werden. Nun wählt man lediglich den Commit zu dem man schauen möchte aus und klickt die drei Punkte. In diesem Fenster wählt man *Switch to Commit* um mit dem *HEAD* (der Stand der in VS-Code angezeigt wird) in diesn Commit zu wechseln.
+
+<img src="picture/restorePicture1.png" alt="picture of commit Messages" width="600"/>
+
+Um nun das Projekt auf diesen Stand zurück zusetzten, wählt man wieder die drei Punkte aber jetzt anstelle von *Switch to Commit*, *Rebase to Commit* dies setzt den Branch *master* auf den Stand dieses Commits. 
+
+<img src="picture/restorePicture2.png" alt="picture of commit Messages" width="600"/>
+
 ### Mergen von zwei Branchen
 
 ### Integration in VS-Code
@@ -167,7 +177,7 @@ In VS-Code kann man auch ohne *Cmd* Änderungen *adden, commiten und pushen*. Im
 
 Mit einer .gitignore Datei kann können bestimmte Datein bestimmt werden, die *git* nicht tracken soll und somit auch nicht bei *Commits* mitnehmen soll. Dies sind Dateien die nicht für die öffentlichkeit bestimmt sind und auch nicht auf gitHub landen sollten. Ein beispiel für solche Datein wären welche, die SSH-Keys, die für jede Person unteschielich sind, enthalten.
 
-Ein Beispiel für .gitignore wäre das hier: 
+Ein Beispiel für eine .gitignore Datei wäre: 
 
 ```
 # Logs
